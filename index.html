@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow Realm — Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="world" id="world">
+
+    <div class="stars"></div>
+    <div class="moon"></div>
+    <div class="mist mist-a"></div>
+    <div class="mist mist-b"></div>
+
+    <!-- Flying dragon -->
+    <div class="dragon-flight" id="dragonFlight">
+      <img src="assets/dragon.png" id="dragon" alt="Flying Dragon">
+      <div class="dragon-glow"></div>
+    </div>
+
+    <!-- Impact flash -->
+    <div class="impact" id="impact"></div>
+
+    <!-- Login card -->
+    <section class="login-card" id="loginCard">
+
+      <div class="corner c1"></div>
+      <div class="corner c2"></div>
+      <div class="corner c3"></div>
+      <div class="corner c4"></div>
+
+      <div class="emblem">♢</div>
+
+      <div class="eyebrow">THE SHADOW REALM</div>
+      <h1>WELCOME BACK</h1>
+      <p class="subtitle">Enter the realm and continue your journey.</p>
+
+      <form id="loginForm">
+
+        <div class="input-box">
+          <span>✉</span>
+          <input type="text" placeholder="Username or Email" required>
+        </div>
+
+        <div class="input-box">
+          <span>♙</span>
+          <input id="password" type="password" placeholder="Password" required>
+          <button type="button" id="showPassword">◉</button>
+        </div>
+
+        <div class="options">
+          <label>
+            <input type="checkbox" checked>
+            Remember me
+          </label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button class="login-btn" type="submit">
+          <span>ENTER THE REALM</span>
+          <b>→</b>
+        </button>
+
+        <div class="divider">
+          <i></i>
+          <span>OR</span>
+          <i></i>
+        </div>
+
+        <p class="signup">New to the realm? <a href="#">Create an account</a></p>
+
+      </form>
+
+      <div class="message" id="message"></div>
+    </section>
+
+    <div class="title">
+      <span>SHADOW</span>
+      <strong>REALM</strong>
+      <small>NOT JUST A LOGIN · A NEW BEGINNING</small>
+    </div>
+
+    <div class="hint" id="hint">THE GUARDIAN IS ARRIVING</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
